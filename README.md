@@ -3,8 +3,9 @@
 1. Наличие интернет соединение у принтера
 2. Подключённая в нужные пины к плате кнопка
 
-    ![Alt-текст](http://www.orangepi.org/img/computersAndMmicrocontrollers/Zero%202/Rectangle%20741.png)
-    * TWI1-SCK/PA18
+    
+![Alt-текст](https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.orangepi.org%2Fhtml%2FhardWare%2FcomputerAndMicrocontrollers%2Fdetails%2FOrange-Pi-Zero-2.html&psig=AOvVaw2JqzcJbxDUkf5wOo2RIiSt&ust=1673621731769000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKCMtPikwvwCFQAAAAAdAAAAABAE)
+    * PC10
     * GND
 
 ### Инструкция по установке
