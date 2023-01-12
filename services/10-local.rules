@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ACTION=="add", ENV{DEVTYPE}=="usb_device",  RUN{program}="/bin/systemctl start printer_button_usb_blink.service"

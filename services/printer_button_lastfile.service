@@ -1,0 +1,9 @@
+[Unit]
+Description=Printer button
+After=moonraker.service
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/klipper/printer_button/lastfile.py
+[Install]
+WantedBy=moonraker.service

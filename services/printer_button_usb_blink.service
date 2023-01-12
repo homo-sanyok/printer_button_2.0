@@ -1,0 +1,8 @@
+[Unit]
+Description=Printer button
+After=moonraker.service
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/klipper/printer_button/usb_blink.py
+[Install]
+WantedBy=moonraker.service
