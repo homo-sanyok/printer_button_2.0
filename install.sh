@@ -20,6 +20,8 @@ sudo systemctl start printer_button_main.service
 sudo systemctl start printer_button_lastfile.service
 sudo systemctl start wifi-settings-rest.service
 sudo cp /home/klipper/printer_button/services/10-local.rules /etc/udev/rules.d/
+sudo rm /etc/nginx/sites-enabled/fluidd
+sudo mv /home/klipper/wifi_settings/fluidd /etc/nginx/sites-enabled/
 sudo service udev reload
 sudo service udev restart
 mv /home/klipper/moonraker/.git /home/klipper/moonraker/.git_
