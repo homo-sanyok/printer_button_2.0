@@ -1,0 +1,10 @@
+[Unit]
+Description=Rest for wifi settings
+After=moonraker.service
+[Service]
+User=klipper
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/klipper/fluidd/wifi_settings/main.py
+[Install]
+WantedBy=moonraker.service

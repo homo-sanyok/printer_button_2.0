@@ -1,0 +1,48 @@
+body {
+    background: #18181a; /* Цвет фона и путь к файлу */
+    color: #bebebf; /* Цвет текста */
+}
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+.text-tr {
+    width: auto;
+}
+.text-td {
+    width: 80%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    transition: 0.3s;
+}
+.text-td:hover {
+    background: #38383d;
+    cursor: pointer;
+}
+.line {
+    border-bottom: 0.5px solid #38383d; /* Параметры линии */
+}
+.swal-modal {
+    background: #303034;
+}
+.swal-title {
+    color: #bebebf;
+}
+.swal-text {
+    color: #bebebf;
+}
+.swal-button {
+    background: #212124;
+    color: #bebebf;
+}
+.swal-button:hover {
+    background: #38383d;
+    color: white;
+}
