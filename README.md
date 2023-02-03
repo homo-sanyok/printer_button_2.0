@@ -4,7 +4,7 @@
 2. Подключённая в нужные пины к плате кнопка
 
     
-![Alt-текст](http://www.orangepi.org/img/computersAndMmicrocontrollers/Zero%202/Rectangle%20741.png)
+![Alt-текст](https://github.com/homo-sanyok/printer_button_2.0/blob/main/image/pins.png)
     * PC10
     * GND
 
