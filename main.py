@@ -14,7 +14,7 @@ def print_static():
 
 URL = 'http://127.0.0.1'
 
-gpio.pinMode(16)
+gpio.pinMode(16, 'in')
 while not gpio.read(16):
     time.sleep(0.1)
 
