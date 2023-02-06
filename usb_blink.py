@@ -3,7 +3,7 @@ import requests
 from sh import mount, umount
 import os
 import time
-import psutil
+import subprocess
 
 URL = 'http://127.0.0.1'
 status = requests.get(URL + '/printer/objects/query?print_stats').json()['result']['status']['print_stats']['state']
@@ -11,9 +11,9 @@ status = requests.get(URL + '/printer/objects/query?print_stats').json()['result
 def du_mount():
     flag = True
     while flag:
-        devices = psutil.disk_partitions()
+        devices = subprocess.check_output(['lsblk', '-o', 'NAME', '-nl'], universal_newlines=True).split('\n')
         for i in devices:
-            if i[0] == '/dev/sda1':
+            if i == 'sda1':
                 mount('/dev/sda1', '/media/usb')
                 flag = False
 

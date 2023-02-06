@@ -3,7 +3,7 @@ sudo rm -r /home/klipper/usb_mount
 sudo rm -r /etc/systemd/system/usb-mount.service
 sudo apt update
 sudo apt install python3 python3-pip usbmount -y
-sudo pip3 install subprocess.run requests flask flask-cors subprocess.run sh psutil
+sudo pip3 install subprocess.run requests flask flask-cors subprocess.run sh
 cd ~
 git clone https://github.com/orangepi-xunlong/wiringOP.git
 cd wiringOP
