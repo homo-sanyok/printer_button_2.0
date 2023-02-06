@@ -9,7 +9,7 @@ CORS(app)
 
 @app.route("/get/list/ssid", methods=['GET'])
 def send_list_ssid():
-    connectedSsid = subprocess.check_output("nmcli -t d status | grep wlx00481100459c", shell=True).decode("utf-8").split(":")
+    connectedSsid = subprocess.check_output("nmcli -t d status | grep wlx", shell=True).decode("utf-8").split(":")
     if connectedSsid[2] == "connected":
         connectedSsid = connectedSsid[3].split("\n")[0]
     else:
