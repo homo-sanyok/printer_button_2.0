@@ -9,12 +9,13 @@ URL = 'http://127.0.0.1'
 status = requests.get(URL + '/printer/objects/query?print_stats').json()['result']['status']['print_stats']['state']
 
 def du_mount():
-    while True:
+    flag = True
+    while flag:
         devices = psutil.disk_partitions()
         for i in devices:
             if i[0] == '/dev/sda1':
                 mount('/dev/sda1', '/media/usb')
-                break
+                flag = False
 
 if status != 'printing' and status != 'paused':
     du_mount()
