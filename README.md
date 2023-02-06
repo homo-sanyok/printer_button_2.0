@@ -14,7 +14,7 @@
 cd /home/klipper
 git clone https://github.com/homo-sanyok/printer_button_2.0.git
 ```
-2. Перейдите в папку со скриптом и запустите установку
+2. Запустите установку
 ```
 mv printer_button_2.0 printer_button
 cd printer_button
