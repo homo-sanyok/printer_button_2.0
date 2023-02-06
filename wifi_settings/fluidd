@@ -2,10 +2,8 @@
 server {
     listen 172.24.1.1:81;
     server_name wifi_settings;
-# root /home.klipper/wifi_settings/html
     location / {
-      #root /home/klipper/fluidd;
-      root /home/klipper/wifi_settings/html;
+      root /home/klipper/printer_button/wifi_settings/html;
     }    
 } 
 

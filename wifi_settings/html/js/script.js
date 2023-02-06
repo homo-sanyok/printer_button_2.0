@@ -106,10 +106,9 @@ function get_ssid(){
                                             </div>`)
             }
             for(var i = 0; i < result["ssid"].length; i++){
-                $("#ssid-table").append($('<tr><td class="line-td"><div class="line"></div</td></tr><tr class="text-tr ' + 'wifi' + (i + 1).toString() + '" ><td class="text-td">' + result["ssid"][i].toString() + '</td></tr>'));
-                $('#wifiContainer').append(`<div class="enterWifi row mb-2 d-flex align-items-center" onclick="connectTo('${result["connected"].toString()}')">
+                $('#wifiContainer').append(`<div class="enterWifi row mb-2 d-flex align-items-center" onclick="connectTo('${result["ssid"][i].toString()}')">
                                                 <div class="col">
-                                                    <font>${result["connected"].toString()}</font>
+                                                    <font>${result["ssid"][i].toString()}</font>
                                                 </div>
                                             </div>`)
             }
