@@ -55,4 +55,4 @@ else:
                 shutil.copyfile(gcodeFile, '/home/klipper/gcode_files/' + gcodeFile.split('/')[3])
                 requests.post(URL + '/printer/print/start?filename=' + gcodeFile.split('/')[3], timeout=1) 
             else:
-                static_print()
+                print_static()
